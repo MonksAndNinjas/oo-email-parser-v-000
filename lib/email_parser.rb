@@ -12,7 +12,7 @@ class EmailParser
     emails = csv
     emails
 
-    
+
   end
 
   def parse
