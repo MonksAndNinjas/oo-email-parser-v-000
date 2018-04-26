@@ -20,7 +20,9 @@ class EmailParser
 
   def parse
     emails_seperated = self.emails.split(/\W\s|\s/)
-    self.class.all << emails_seperated
+    emails_seperated.each do |email|
+      self.class.all << email
+    end
   end
 
 end
