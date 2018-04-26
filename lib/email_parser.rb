@@ -24,6 +24,7 @@ class EmailParser
       if self.all.detect {|email_saved| email_saved == email_unsaved} == nil
         self.class.all << email_unsaved
       end
+    end
   end
 
 end
