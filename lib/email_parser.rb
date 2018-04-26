@@ -10,7 +10,7 @@ class EmailParser
   @@all = []
 
   def initialize(csv)
-    @emails = csv
+    emails = csv
     self.class.all << emails
     puts emails
   end
