@@ -14,7 +14,7 @@ class EmailParser
   end
 
   def parse
-    self.emails.split(", ")
+    self.emails.split(/\W\s|\s/)
   end
 
 end
