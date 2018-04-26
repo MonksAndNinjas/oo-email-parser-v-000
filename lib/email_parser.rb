@@ -20,7 +20,7 @@ class EmailParser
 
   def parse
     emails_seperated = self.emails.split(/\W\s|\s/)
-
+    emails_sperated.uniq
   end
 
 end
