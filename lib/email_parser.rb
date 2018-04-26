@@ -11,7 +11,7 @@ class EmailParser
 
   def initialize(csv)
     emails = csv
-    @@all << emails
+    self.class.all << emails
     emails
   end
 
