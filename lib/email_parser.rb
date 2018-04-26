@@ -11,7 +11,6 @@ class EmailParser
 
   def initialize(csv)
     @emails = csv
-    self.class.all << @emails
     @emails
   end
 
@@ -20,8 +19,8 @@ class EmailParser
   end
 
   def parse
-    self.emails.split(/\W\s|\s/)
-
+    emails_seperated = self.emails.split(/\W\s|\s/)
+    self.class.all << emails_seperated
   end
 
 end
