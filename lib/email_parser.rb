@@ -11,11 +11,13 @@ class EmailParser
   def initialize(csv)
     emails = csv
     emails
-    binding.pry
+
+    
   end
 
   def parse
     emails
+    binding.pry
   end
 
 end
