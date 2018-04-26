@@ -20,7 +20,7 @@ class EmailParser
   end
 
   def parse
-    self.class.all.detect {|email| email == self}
+    self.class.all
   end
 
 end
