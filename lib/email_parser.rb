@@ -7,17 +7,11 @@ require 'pry'
 class EmailParser
 
   attr_accessor :emails
-  #@@all = []
 
   def initialize(csv)
     @emails = csv
-    #self.class.all << emails
     @emails
   end
-
-  #def self.all
-  #  @@all
-  #end
 
   def parse
     self.emails
