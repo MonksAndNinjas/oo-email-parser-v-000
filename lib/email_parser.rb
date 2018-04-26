@@ -8,16 +8,15 @@ class EmailParser
 
   attr_accessor :emails
 
+  @@all = []
+
   def initialize(csv)
     emails = csv
-    emails
-
 
   end
 
   def parse
-    emails
-    binding.pry
+
   end
 
 end
