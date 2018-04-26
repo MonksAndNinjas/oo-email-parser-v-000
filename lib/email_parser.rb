@@ -21,9 +21,9 @@ class EmailParser
   def parse
     emails_seperated = self.emails.split(/\W\s|\s/)
     emails_seperated.each do |email_unsaved|
-      if self.all.detect {|email_saved| email_saved == email_unsaved}
-      self.class.all << email
-    end
+      if self.all.detect {|email_saved| email_saved == email_unsaved} == nil
+        self.class.all << email_unsaved
+      end
   end
 
 end
