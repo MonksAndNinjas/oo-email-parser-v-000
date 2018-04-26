@@ -25,6 +25,7 @@ class EmailParser
         self.class.all << email_unsaved
       end
     end
+    self.class.all
   end
 
 end
