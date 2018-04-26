@@ -12,7 +12,8 @@ class EmailParser
 
   def initialize(csv)
     emails = csv
-
+    @@all << emails
+    emails
   end
 
   def parse
